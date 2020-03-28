@@ -31,22 +31,25 @@ export default new Vuex.Store({
         
       })
     },
-    GET_CART_FROM_API({commit}) {
-      fetch('http://localhost:3000/cart')
-      .then(response => {
-        return response.json();
-      })
-      .then(data => {
-        commit('SET_CART', data)
-      })
-      .catch(err => {
-        console.log(err);
+    
+    ADD_TO_CART({state}, product) {
+      console.log(product);
+      let isProduct = false;
+      this.state.cart.forEach(el => {
+        if(el.id == product.id){
+          el.quantity++;
+          isProduct = true;
+        }
+
         
       })
-    },
-    ADD_TO_CART({dispatch, state}, product) {
-        
-        if(!state.cart.length){
+      if(!isProduct){
+        product.quantity = 1
+        this.state.cart.push(product)
+      }
+      
+
+        /* if(!state.cart.length){
           product.quantity = 1;
                        
             fetch('http://localhost:3000/cart', {
@@ -122,12 +125,12 @@ export default new Vuex.Store({
                 console.log(err);
                 
               })
-              */
-            }
+              
+            } 
           }); 
         }
         
-      
+      */
     },
   },
   
