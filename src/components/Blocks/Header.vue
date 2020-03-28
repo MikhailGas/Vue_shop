@@ -33,46 +33,7 @@
             </div>
             
             <div class="header__right">
-                <div class="header__cart">
-                    <img  src="@/assets/img/cart.svg" alt="cart">
-                    <div class="cart__box">
-                        <div class="cart__products">
-                            <img src="@/assets/img/cart_1.png" alt="cart_1" class="product__cart__img">
-                            <div class="product__cart__text">
-                                <a href="#" class="product__cart__name">Rebox Zane</a>
-                                <div class="product__raiting">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <p class="product__cart__price">1  x   $250</p>
-                            </div>
-                            <p class="product__delete"><i class="fa fa-times-circle"></i></p>
-                        </div>
-                        <div class="cart__products">
-                            <img src="@/assets/img/cart_2.png" alt="cart_2" class="product__cart__img">
-                            <div class="product__cart__text">
-                                <a href="" class="product__cart__name">Rebox Zane</a>
-                                <div class="product__raiting"> <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <p class="product__cart__price">1  x   $250</p>
-                            </div>
-                            <p class="product__delete"><i class="fa fa-times-circle"></i></p>
-                        </div>
-                        <div class="total__price">
-                            <p class="total">TOTAL</p>
-                            <p class="price">$500.00</p>
-                        </div>
-                        <a href="checkout.html" class="cart__button">Checkout</a>
-                        <a href="cart.html" class="cart__button">Go to cart</a>
-                    </div>
-                </div> 
+                <cart-box />
                 
                 <a href="#" class="myAccount__button" type="button">My Account &#x25BC;</a>
             </div>
@@ -83,7 +44,12 @@
 </template>
 
 <script>
+import CartBox from '../Elements/CartBox.vue'
+
 export default {
-    name:'header-block'
+    name:'header-block',
+    components:{
+        CartBox,
+    }
 }
 </script>

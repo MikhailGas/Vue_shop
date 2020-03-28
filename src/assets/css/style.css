@@ -713,7 +713,6 @@ a {
   font-weight: 400;
 }
 .cart__box {
-  display: none;
   width: 262px;
   border-radius: 5px;
   background-color: #ffffff;
