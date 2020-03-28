@@ -1,0 +1,63 @@
+{
+  "products": [
+    {
+      "id_product": 101,
+      "product_name": "Футболка",
+      "price": 1000,
+      "img": "/img/product__1.jpg"
+    },
+    {
+      "id_product": 102,
+      "product_name": "Блузка",
+      "price": 3000,
+      "img": "/img/product__2.jpg"
+    },
+    {
+      "id_product": 103,
+      "product_name": "Куртка",
+      "price": 45600,
+      "img": "/img/product__3.jpg"
+    },
+    {
+      "id_product": 104,
+      "product_name": "Платье",
+      "price": 7000,
+      "img": "/img/product__4.jpg"
+    },
+    {
+      "id_product": 105,
+      "product_name": "Платье",
+      "price": 7000,
+      "img": "/img/product__5.jpg"
+    },
+    {
+      "id_product": 106,
+      "product_name": "Шляпа",
+      "price": 7000,
+      "img": "/img/product__6.jpg"
+    },
+    {
+      "id_product": 107,
+      "product_name": "Штаны",
+      "price": 7000,
+      "img": "/img/product__7.jpg"
+    },
+    {
+      "id_product": 108,
+      "product_name": "Шорты",
+      "price": 7000,
+      "img": "/img/product__8.jpg"
+    },
+    {
+      "id": 400,
+      "product_name": "Майка",
+      "price": 1000
+    },
+    {
+      "id": 401,
+      "product_name": "Майка",
+      "price": 900
+    }
+  ],
+  "cart": []
+}
