@@ -67,12 +67,28 @@
       "quantity": 1
     },
     {
+      "id": 103,
+      "name": "Куртка",
+      "price": 45600,
+      "img": "product__3.jpg",
+      "rating": 4,
+      "quantity": 1
+    },
+    {
       "id": 101,
       "name": "Футболка",
       "price": 1000,
       "img": "product__1.jpg",
       "rating": 4,
-      "quantity": 2
+      "quantity": 3
+    },
+    {
+      "id": 102,
+      "name": "Блузка",
+      "price": 3000,
+      "img": "product__2.jpg",
+      "rating": 4,
+      "quantity": 3
     }
   ]
 }
